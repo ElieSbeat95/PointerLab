@@ -1,9 +1,15 @@
 #include<stdio.h>
+int inputThree(int* a,int* b,int* c);
+void sortThree(int* a,int* b,int* c);
+void sortTwo(int* a,int* b);
 int main(){
     int a,b,c,isThreeZero=1;
     while (isThreeZero!=0){
         isThreeZero=inputThree(&a,&b,&c);
-        if(isThreeZero!=0)sortThree(&a,&b,&c);
+        if(isThreeZero!=0){
+            sortThree(&a,&b,&c);
+            printf("%d %d %d\n",a,b,c);
+        }
         else printf("Three Zeros Entered. The End!");
     }
     return 0;

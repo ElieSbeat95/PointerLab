@@ -11,7 +11,6 @@ void printArray(int *arr, int N);
 
 int main() {
     int N = 7, maxValue;
-    const N=7;
     int arr1[N], arr2[N], arr3[N];
     srand(time(NULL));
     inputArr1(arr1, N);
